@@ -1,0 +1,27 @@
+{
+  "name": "cls-prefix",
+  "version": "1.0.0",
+  "description": "A simple JavaScript utility for conditionally joining classNames together.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guibwl/cls-prefix.git"
+  },
+  "keywords": [
+    "class",
+    "classname",
+    "prefix"
+  ],
+  "author": "guibwl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guibwl/cls-prefix/issues"
+  },
+  "homepage": "https://github.com/guibwl/cls-prefix#readme",
+  "devDependencies": {
+    "rollup": "^1.31.0"
+  }
+}
