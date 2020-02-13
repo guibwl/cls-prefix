@@ -1,0 +1,5 @@
+/config/
+/libs/
+/scripts/
+babel.config.js
+tsconfig.json

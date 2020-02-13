@@ -1,10 +1,11 @@
 {
   "name": "cls-prefix",
-  "version": "1.0.0",
-  "description": "A simple JavaScript utility for conditionally joining classNames together.",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "A simple JavaScript utility for conditionally joining classNames together and customize a prefix.",
+  "main": "esm/index.js",
   "scripts": {
-    "build": "rollup -c",
+    "build": "node scripts/build.js",
+    "release": "node scripts/publish.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,7 +15,10 @@
   "keywords": [
     "class",
     "classname",
-    "prefix"
+    "prefix",
+    "cls-prefix",
+    "class-prefix",
+    "classname-prefix"
   ],
   "author": "guibwl",
   "license": "MIT",
@@ -24,32 +28,41 @@
   "homepage": "https://github.com/guibwl/cls-prefix#readme",
   "devDependencies": {
     "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-json": "^4.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
-    "@rollup/plugin-typescript": "^3.0.0",
-    "babel-preset-es2015-rollup": "^3.0.0",
+    "rimraf": "^3.0.2",
     "rollup": "^1.31.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-progress": "^1.1.1",
     "rollup-plugin-terser": "^5.2.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.8.3",
+    "@babel/runtime": "^7.8.4",
     "core-js": "^3.6.4",
+    "regenerator-runtime": "^0.13.3",
+    "semver": "^7.1.3",
     "typescript": "^3.7.5"
   },
   "browserslist": {
-    "production": [
-      ">0.02%",
+    "cjs": [
+      ">1%",
       "not dead",
       "not op_mini all"
     ],
-    "development": [
+    "esm": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ],
+    "umd": [
+      ">.2%",
+      "not dead",
+      "not op_mini all"
     ]
   }
 }
