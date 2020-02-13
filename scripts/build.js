@@ -25,8 +25,6 @@ const execBuildConfig =  (env) => {
 }
 
 // Building with different environments
-// ConmmonJs
-execBuildConfig('cjs');
 // UMD
 execBuildConfig('umd');
 // EsModules

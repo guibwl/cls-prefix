@@ -1,6 +1,6 @@
 {
   "name": "cls-prefix",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A simple JavaScript utility for conditionally joining classNames together and customize a prefix.",
   "main": "esm/index.js",
   "scripts": {
@@ -49,11 +49,6 @@
     "typescript": "^3.7.5"
   },
   "browserslist": {
-    "cjs": [
-      ">1%",
-      "not dead",
-      "not op_mini all"
-    ],
     "esm": [
       "last 1 chrome version",
       "last 1 firefox version",
